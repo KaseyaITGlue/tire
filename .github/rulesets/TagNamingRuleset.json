@@ -1,0 +1,28 @@
+{
+  "id": 2836456,
+  "name": "TagNamingRuleset",
+  "target": "tag",
+  "source_type": "Repository",
+  "source": "KaseyaITGlue/tire",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~ALL"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "tag_name_pattern",
+      "parameters": {
+        "operator": "regex",
+        "pattern": "^v\\d+\\.\\d+\\.\\d+$",
+        "negate": false,
+        "name": ""
+      }
+    }
+  ],
+  "bypass_actors": []
+}
